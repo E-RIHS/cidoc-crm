@@ -1,0 +1,32 @@
+//flowchart LR fix			
+Example Event PID#-1	rdfs:type	crm:E5.Event	event|type
+Example Event PID#-1	crm:P31.has modified	Example Object PID	|object
+Example Event PID#-1	crm:P25.moved	Example Object PID	
+Example Event PID#-1	crm:P34.concerned	Example Object PID	
+Example Object PID	rdfs:type	crm:E22.Man-Made Object	 |type
+			
+Example Event PID#-1	crm:P14.carried out by	Example Actor PID	|actor_bn
+Example Event PID#-1	crm:P12.occurred in the presence of	Example Actor PID	
+Example Event PID#-1	crm:P15.was influenced by	Example Actor PID	
+Example Actor PID	rdfs:comment	"An event in the life of an object can involve a range of people in different roles."@en	|note
+			
+Example Event PID#-1	crm:P4.has time span	_Blank Node#-1	|period_bn
+Example Event PID#-1	crm:P7.took place at	Example Place PID	|place
+Example Place PID	rdfs:type	crm:E53.Place	|type
+			
+Example Event PID#-1	crm:P33.used specific technique	Example Technique PID	|type
+Example Technique PID	rdfs:type	crm:E55.Type	|type
+			
+Example Event PID#-1	crm:P126.employed	Example Material PID	|object
+Example Material PID	rdfs:type	crm:E57.Material	|type
+			
+			
+_Blank Node#-1	rdfs:type	crm:E52.Time-span	|type
+_Blank Node#-1	rdfs:label	"Time spans can be any period of time, with a start and a finish date"@en	|note
+			
+Example Event PID#-1	crm:P70.is documented in	_Blank Node#-2	|document
+_Blank Node#-2	rdfs:type	crm:E31.Document	|type
+_Blank Node#-2	rdfs:comment	"This allows a link to standalone and/or legacy reports, publications, databases, etc."@en	|note
+			
+Example Event PID#-1	rdfs:seeAlso	"Different types of events will have different additional properties and links to external resources."@en	|note
+Example Event PID#-1	rdfs:comment	"Different types of events will have different additional relationships."@en	|note

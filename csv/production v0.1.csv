@@ -1,0 +1,49 @@
+//flowchart LR fix			
+ngo:002-0432-0000	rdfs:type	crm:E12.Production	event|type
+ngo:002-0432-0000	rdfs:comment	Free Text@en	|note
+ngo:002-0432-0000	rdfs:seeAlso	Further connections could be made to other related objects, people or events@en	|note
+ngo:002-0432-0000	P70.is documented in	_Blank Node#-3	|document_bn
+_Blank Node#-3	rdfs:type	crm:E31.Document	|type
+_Blank Node#-3	rdfs:comment	This allows links to standalone and/or legacy reports, publications, databases, etc.@en	|note
+			
+ngo:002-0432-0000	crm:P2.has type	aat:300404387	
+aat:300404387	rdfs:type	crm:E55.Type	|type
+aat:300404387	rdfs:has label	"creating (artistic activity)"@en	|name
+			
+ngo:002-0432-0000	crm:P108.has produced	ng:0FJS-0001-0000-0000	|object
+ng:0FJS-0001-0000-0000	rdfs:type	crm:E22.Man-Made Object	object|type
+			
+ngo:002-0432-0000	crm:P14.carried out by	ng:0QCD-0001-0000-0000	|actor
+ng:0QCD-0001-0000-0000	rdfs:type	crm:E21.Person	|type
+			
+ngo:002-0432-0000	crm:P7.took place at	tgn:7000526	|place
+tgn:7000526	rdfs:type	crm:E53.Place	|type
+tgn:7000526	rdfs:label	"Perugia (inhabited place)"@en	|name
+			
+ngo:002-0432-0000	P4.has time span	_Blank Node#-1	|period_bn
+_Blank Node#-1	rdfs:type	crm:E52.Time-span	|type
+_Blank Node#-1	crm:P2.has type	aat:300379244	|type
+aat:300379244	rdfs:label	years@en	|name
+_Blank Node#-1	rdfs:label	1505@en	|name
+_Blank Node#-1	crm:P82a.begin of the begin	1505-01-01^^xsd.dateTime	|period
+_Blank Node#-1	crm:P82b.end of the end	1505-12-31^^xsd.dateTime	|period
+_Blank Node#-1	owl:sameAs	wd:Q6153	|period
+			
+ngo:002-0432-0000	crm:P32.used general technique	aat:300178684	|idea
+aat:300178684	rdfs:type	crm.E55.Type	|type
+aat:300178684	rdfs:label	"oil painting (technique)"@en	|name
+			
+			
+ngo:002-0432-0000	crm:P126.employed	aat:300015050	|object
+aat:300015050	rdfs:type	crm:E57.Material	|type
+aat:300015050	rdfs:label	oil paint (paint)@en	|name
+			
+ngo:002-0432-0000	crm:P15.was influenced by	aat:300107304	|actor
+aat:300107304	rdfs:type	crm:E74.Group	|type
+aat:300107304	rdfs:label	"Ancient Italian"@en	|name
+			
+ngo:002-0432-0000	crm:P70.is documented in	_Blank Node#-2	|document_bn
+_Blank Node#-2	rdfs:type	crm:E31.Document	|type
+_Blank Node#-2	rdfs:seeAlso	https://cima.ng-london.org.uk/documentation/files/2009/10/01/Raphael%20Catalogue%20Complete.pdf	|url
+_Blank Node#-2	rdfs:seeAlso	https://www.book-info.com/isbn/1-85709-999-0.htm	|url
+_Blank Node#-2	rdfs:label	Raphael: From Urbino to Rome@en	|name

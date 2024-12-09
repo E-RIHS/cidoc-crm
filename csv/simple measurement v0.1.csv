@@ -1,0 +1,31 @@
+//flowchart LR fix			
+			
+_Blank Node#-1	rdfs:type	crm:E16.Measurement	event_bn-fs24|type
+_Blank Node#-1	crm:P40.observed dimension	_Blank Node#-2	|dims_bn
+			
+_Blank Node#-1	crm:P2.has type	aat:300053578	|type
+aat:300053578	rdfs:label	"measuring"@en	|name
+aat:300053578	rdfs:type	crm:E55.Type	|type
+			
+_Blank Node#-1	crm:P33.used specific technique	ngi:M0002	|document
+ngi:M0002	rdfs:type	crm:E29.Design or Procedure	|type
+ngi:M0002	rdfs:label	"NG Painting measurement method"@en	|name
+			
+_Blank Node#-1	crm:P16.used specific object	aat:300204852	|type
+aat:300204852	rdfs:label	"tape measure"@en	|name
+aat:300204852	rdfs:type	crm:E55.Type	|type
+			
+_Blank Node#-1	crm:P32.used general technique	wd:Q3485549	|type
+wd:Q3485549	rdfs:label	"manual work"@en	|name
+wd:Q3485549	rdfs:type	crm:E55.Type	|type
+			
+_Blank Node#-2	rdfs:type	crm:E54.Dimension	|type
+_Blank Node#-2	crm:P2.has type	aat:300055647	|type
+aat:300055647	rdfs:label	"width"@en	|name
+aat:300055647	rdfs:type	crm:E55.Type	|type
+			
+_Blank Node#-2	crm:P90.has value	216.8^^xsd:decimal	|literal
+			
+_Blank Node#-2	crm:P91.has unit	aat:300379098	|type
+aat:300379098	rdfs:label	"centimeters"@en	|name
+aat:300379098	rdfs:type	crm:E55.Type	|type

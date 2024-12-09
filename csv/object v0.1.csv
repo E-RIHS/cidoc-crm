@@ -1,0 +1,69 @@
+//flowchart LR fix			
+ng:0FJS-0001-0000-0000	rdfs:type	crm:E22.Man-Made Object	object|type
+ng:0FJS-0001-0000-0000	rdfs:seeAlso	Different types of objects will have different additional properties and links to external resources.	|note
+ng:0FJS-0001-0000-0000	rdfs:comment	"Raphael painted this altarpiece for the Ansidei family chapel dedicated to Saint Nicholas in the Servite Church of S. Fiorenzo in Perugia. The date MDV (1505) is inscribed in gold on the …"@en	|note
+ng:0FJS-0001-0000-0000	crm:P108.was produced by	ng:002-0432-0000	|event
+ng:002-0432-0000	rdfs:type	crm:E12.Production	|type
+ng:0FJS-0001-0000-0000	crm:P46.forms part of	ng:001-02VZ-0000	|object
+ng:001-02VZ-0000	rdfs:type	crm:E78.Curated Holding	|type
+ng:001-02VZ-0000	rdfs:label	"The National Gallery Collection (London)"@en	|name
+ng:0FJS-0001-0000-0000	crm:P102.has title	ng:00C-02FT-0000	|name
+ng:00C-02FT-0000	rdfs:type	crm:E35.Title	|type
+ng:00C-02FT-0000	rdfs:label	"The Ansidei Madonna"@en	|name
+ng:00C-02FT-0000	crm:P2.has type	aat:300417208	|type
+aat:300417208	rdfs:label	"brief titles"@en	|name
+
+ng:0FJS-0001-0000-0000	crm:P48.has preferred identifier	_Blank Node#-6	|object_bn
+_Blank Node#-6	rdfs:type	crm:E42.Identifier	|type
+_Blank Node#-6	rdfs:label	"NG171"@en	|name
+_Blank Node#-6	crm:P2.has type	aat:300312355	|type
+aat:300312355	rdfs:label	"accession numbers"@en	|name
+
+ng:0FJS-0001-0000-0000	crm:P70.is documented in	_Blank Node#-7	|document_bn
+_Blank Node#-7	rdfs:type	crm:E31.Document	|type
+_Blank Node#-7	rdfs:comment	This allows a link to standalone and/or legacy reports, publications, databases, etc.	|note
+
+ng:0FJS-0001-0000-0000	crm:P70.is documented in	ng:00C-03FN-0000	|document
+ng:00C-03FN-0000	rdfs:type	crm:E31.Document	|type
+
+ng:0FJS-0001-0000-0000	crm:P43.has dimension	_Blank Node#-1	|dims_bn
+ng:0FJS-0001-0000-0000	crm:P43.has dimension	_Blank Node#-2	|dims_bn
+ng:0FJS-0001-0000-0000	crm:P46.is composed of	_Blank Node#-3	|object_bn
+ng:0FJS-0001-0000-0000	crm:P46.is composed of	_Blank Node#-5	|object_bn
+
+ng:0FJS-0001-0000-0000	crm:P12.was present at	ng:002-05XY-0000	|event
+ng:002-05XY-0000	rdfs:type	crm:E5.Event	|type
+ng:002-05XY-0000	rdfs:label	"Further Events"@en	|name
+
+_Blank Node#-1	crm:P2.has type	aat:300055647	|type
+aat:300055647	rdfs:label	"width"@en	|name
+_Blank Node#-1	crm:P90.has value	147.6	|literal
+_Blank Node#-1	crm:P91.has unit	aat:300379098	|type
+aat:300379098	rdfs:label	"centimeters"@en	|name
+
+_Blank Node#-2	crm:P2.has type	aat:300055644	|type
+aat:300055644	rdfs:label	"height"@en	|name
+_Blank Node#-2	crm:P90.has value	216.8	|literal
+_Blank Node#-2	crm:P91.has unit	aat:300379098	|type
+
+
+_Blank Node#-3	crm:P2.has type	aat:300163343	|type
+aat:300163343	rdfs:label	"media (artists' materials)"@en	|name
+_Blank Node#-3	crm:P45.consists of	aat:300015050	|type
+aat:300015050	rdfs:label	"medium: oil paint (paint)"@en	|name
+
+ng:0FJS-0001-0000-0000	crm:P2.has type	aat:300033799	|type
+aat:300033799	rdfs:label	"oil painting: (visual works)"@en	|name
+ng:0FJS-0001-0000-0000	crm:P2.has type	aat:300234093	|type
+aat:300234093	rdfs:label	"religious visual works"@en	|name
+ng:0FJS-0001-0000-0000	crm:P2.has type	aat:300033656	|type
+aat:300033656	rdfs:label	"panel painting: (painting: by form)"@en	|name
+
+ng:00C-03FN-0000	rdfs:seeAlso	https://cima.ng:london.org.uk/documentation/files/2009/10/01/Raphael%20Catalogue%20Complete.pdf	|url
+ng:00C-03FN-0000	rdfs:seeAlso	https://www.book-info.com/isbn/1-85709-999-0.htm	|url
+ng:00C-03FN-0000	rdfs:label	"Raphael: From Urbino to Rome"@en	|name
+
+_Blank Node#-5	crm:P2.has type	aat:300014844	|type
+aat:300014844	rdfs:label	"supports (artists' materials)"@en	|name
+_Blank Node#-5	crm:P45.consists of	aat:300012363	|type
+aat:300012363	rdfs:label	"support: poplar (wood)"@en	|name

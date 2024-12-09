@@ -1,0 +1,77 @@
+//flowchart LR fix			
+			
+_Blank Node#-1	rdfs:type	crm:E80.Part Removal	event_bn|type
+_Blank Node#-1	crm:P14.carried out by	ngi:00D-002-0000	|actor
+_Blank Node#-1	crm:P113.removed	ngi:NG1171-IS31	|object
+_Blank Node#-1	crm:P4.has time span	_Blank Node#-2	|period_bn
+_Blank Node#-1	crm:P70.is documented in	_Blank Node#-3	|document_bn
+			
+ngi:00D-002-0000	rdfs:type	crm:E21.Person	|type
+ngi:00D-002-0000	rdfs:label	"Example NG Staff Member"@en	|name
+ngi:00D-002-0000	crm:P2.has type	aat:300025820	|type
+aat:300025820	rdfs:label	"conservation scientists"@en	type|name
+			
+ngi:NG1171-IS31	rdfs:type	crm:E22.Man-Made Object	|type
+ngi:NG1171-IS31	rdfs:comment	"Samples can then be fully defined like all generic objects"@en	|note
+			
+_Blank Node#-2	rdfs:type	crm:E52.Time-span	|type
+_Blank Node#-2	crm:P2.has type	wd:Q205892	|type
+wd:Q205892	rdfs:label	"calendar date"@en	|name
+_Blank Node#-2	crm:P82a.begin of the begin	2001-02-13T00:00^^xsd:dateTime	|literal
+_Blank Node#-2	crm:P82b.end of the end	2001-02-13T24:00^^xsd:dateTime	|literal
+_Blank Node#-2	rdfs:label	2001-02-13@en	|name
+			
+_Blank Node#-3	rdfs:type	crm:E31.Document	|type
+_Blank Node#-3	crm:P2.has type	wd:Q1710397	|type
+wd:Q1710397	rdfs:label	"reason"@en	|name
+_Blank Node#-3	rdf:comment	"Actual textual content"@en#-3	|note
+			
+_Blank Node#-1	crm:P112.diminished	ng:0FJS-0001-0000-0000	|object
+ng:0FJS-0001-0000-0000	rdfs:type	crm:E22.Man-Made Object	|type
+			
+_Blank Node#-1	crm:P7.took place	ngi:N-1171-00-000052-S01	|place
+ngi:N-1171-00-000052-S01	rdfs:type	crm:E53.Place	|type
+			
+ng:0FJS-0001-0000-0000	crm:P59.has section	ngi:N-1171-00-000052-S01	
+			
+ng:0FJS-0001-0000-0000	crm:P138.has representation	ngi:N-1171-00-000052	|digital2
+ngi:N-1171-00-000052	rdfs:type	crm:E36.Visual Item	|type
+ngi:N-1171-00-000052	crm:P148.has component	_Blank Node#-4	|digital2
+			
+_Blank Node#-4	rdfs:type	crm:E36.Visual Item	|type
+_Blank Node#-4	crm:P2.has type	ngo:00A-00E0-0000	|type
+_Blank Node#-4	rdfs:label	"Area of Interest"@en	|name
+			
+ngi:N-1171-00-000052-S01	crm:P138.has representation	_Blank Node#-4	
+			
+ngi:N-1171-00-000052-S01	crm:P1.is identified by	_Blank Node#-5	|name
+_Blank Node#-4	crm:P1.is identified by	_Blank Node#-5	
+			
+_Blank Node#-5	rdfs:type	crm:E41.Appellation	|type
+_Blank Node#-5	crm:P70.is documented in	_Blank Node#-6	|document_bn
+_Blank Node#-6	rdfs:type	crm:E31.Document	|type
+_Blank Node#-6	crm:P2.has type	aat:300026100	|type
+aat:300026100	rdfs:label	"annotation"@en	|name
+_Blank Node#-6	rdf:comment	"Actual textual content"@en#-6	|note
+			
+ngi:N-1171-00-000052-S01	crm:P70.is documented in	_Blank Node#-7	|document_bn
+_Blank Node#-7	rdfs:type	crm:E31.Document	|type
+_Blank Node#-7	crm:P2.has type	wd:Q1200750	|type
+wd:Q1200750	rdfs:label	"description"@en	|name
+_Blank Node#-7	rdf:comment	"Actual textual content"@en#-7	|note
+			
+_Blank Node#-5	crm:P43.has dimension	_Blank Node#-8	|dims_bn
+_Blank Node#-8	rdfs:type	crm:E54.Dimension	|type
+_Blank Node#-8	crm:P2.has type	ngo:00A-00DW-0000	|type
+ngo:00A-00DW-0000	rdfs:label	"X Dimension"@en	type|name
+_Blank Node#-8	crm:P90.has value	170^^xsd:decimal	dims_bn|literal
+_Blank Node#-8	crm:P91.has unit	aat:300266190	|type
+aat:300266190	rdfs:label	"pixels"@en	|name
+			
+_Blank Node#-5	crm:P43.has dimension	_Blank Node#-9	|dims_bn
+_Blank Node#-9	rdfs:type	crm:E54.Dimension	|type
+_Blank Node#-9	crm:P2.has type	ngo:00A-00DX-0000	|type
+ngo:00A-00DX-0000	rdfs:label	"Y Dimension"@en	|name
+_Blank Node#-9	crm:P90.has value	6239^^xsd:decimal	|literal
+_Blank Node#-9	crm:P91.has unit	aat:300266190	|type
+aat:300266190	rdfs:label	"pixels"@en	|name

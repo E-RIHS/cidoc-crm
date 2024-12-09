@@ -1,0 +1,66 @@
+//flowchart LR fix			
+ng:0F6J-0001-0000-0000	rdfs:type	crm:E21.Person	actor|type
+ng:0F6J-0001-0000-0000	rdfs:comment	"Free Text"@en	|note
+ng:0F6J-0001-0000-0000	owl:sameAs	ulan:500023578	|url
+ng:0F6J-0001-0000-0000	owl:sameAs	wd:Q5597	|url
+
+ng:0F6J-0001-0000-0000	crm:P2.has type	aat:300411314	|type
+aat:300411314	rdfs:label	"artist painter"@en	|name
+ng:0F6J-0001-0000-0000	crm:P2.has type	aat:300024987	|type
+aat:300024987	rdfs:label	"architects"@en	|name
+
+ulan:500023578	rdfs:label	"Raphael"@en	|name
+wd:Q5597	rdfs:label	"Raphael"@en	|name
+
+ng:0F6J-0001-0000-0000	crm:P131.is identified by	_Blank Node#-1	|name
+_Blank Node#-1	rdfs:type	crm:E41.Appellation	|type
+_Blank Node#-1	rdfs:label	"Raphael"@en	|name
+
+ng:0F6J-0001-0000-0000	crm:P14.performed	ngo:002-0432-0000	|event
+ngo:002-0432-0000	rdfs:type	crm:E12.Production	|type
+
+ng:0F6J-0001-0000-0000	crm:P15.was influenced by	aat:300107304	|actor
+aat:300107304	rdfs:type	crm:E74 Group	|type
+aat:300107304	rdfs:label	"Ancient Italians"@en	|name
+
+ng:0F6J-0001-0000-0000	crm:P98.was born	_Blank Node#-2	|event_bn
+ng:0F6J-0001-0000-0000	crm:P100.died in	_Blank Node#-3	|event_bn
+
+_Blank Node#-2	rdfs:type	crm:E67.Birth	|type
+_Blank Node#-2	crm:P7.took place at	tgn:7003994	|place
+_Blank Node#-2	crm:P4.has time span	_Blank Node#-4	|period_bn
+
+_Blank Node#-3	rdfs:type	crm:E69.Death	|type
+_Blank Node#-3	crm:P7.took place at	tgn:7000874	|place
+_Blank Node#-3	crm:P4.has time span	_Blank Node#-5	|period_bn
+
+tgn:7003994	rdfs:type	crm:E53.Place	|type
+tgn:7003994	rdfs:label	"Urbino (inhabited place)"@en	|name
+tgn:7003994	owl:sameAs	wd:Q2759	|url
+
+_Blank Node#-4	rdfs:type	crm:E52.Time-span	|type
+_Blank Node#-4	crm:P2.has type	aat:300379244	|type
+aat:300379244	rdfs:type	crm:E55.Type	|type
+aat:300379244	rdfs:label	"years"@en	
+_Blank Node#-4	rdfs:label	"1483"@en	|name
+_Blank Node#-4	crm:P82a.begin of the begin	1483-01-01^^xsd.dateTime	|name
+_Blank Node#-4	crm:P82b.end of the end	1483-12-31^^xsd.dateTime	|name
+
+_Blank Node#-5	rdfs:type	crm:E52.Time-span	|type
+_Blank Node#-5	crm:P2.has type	aat:300379244	|type
+_Blank Node#-5	rdfs:label	"1520"@en	|name
+_Blank Node#-5	crm:P82a.begin of the begin	1520-01-01^^xsd.dateTime	|name
+_Blank Node#-5	crm:P82b.end of the end	1520-12-31^^xsd.dateTime	|name
+
+tgn:7000874	rdfs:type	crm:E53.Place	|type
+tgn:7000874	rdfs:label	"Rome (inhabited place)"@en	|name
+tgn:7000874	owl:sameAs	wd:Q220	|url
+
+ng:0F6J-0001-0000-0000	crm:P70.is documented in	_Blank Node#-6	|document_bn
+_Blank Node#-6	rdfs:type	crm:E31.Document	|type
+_Blank Node#-6	rdfs:label	"Raphael: From Urbino to Rome"@en	|name
+_Blank Node#-6	rdfs:seeAlso	https://www.book-info.com/isbn/1-85709-999-0.htm	|url
+_Blank Node#-6	owl:sameAs	https://cima.ng-london.org.uk/documentation/files/2009/10/01/Raphael%20Catalogue%20Complete.pdf	|url
+
+ng:0F6J-0001-0000-0000	rdfs:seeAlso	https://cima.ng-london.org.uk/documentation	|url
+https://cima.ng-london.org.uk/documentation	rdfs:label	"Raphael Research Resource"@en	|name

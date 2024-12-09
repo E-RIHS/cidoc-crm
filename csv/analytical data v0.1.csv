@@ -1,0 +1,68 @@
+//flowchart LR fix			
+			
+ngi:NG1171-OS8-GC	rdfs:type	crm:E73.Information Object	object|type
+ngi:NG1171-OS8-GC	crm:P108.was produced by	_Blank Node#-0	|event
+_Blank Node#-0	rdfs:type	crm:E16.Measurement	|type
+ngi:NG1171-OS8-GC	crm:P43.has dimension	_Blank Node#-1	|dims_bn
+			
+_Blank Node#-1	rdfs:type	crm:E54.Dimension	|type
+_Blank Node#-1	crm:P2.has type	wd:Q2199864	|type
+wd:Q2199864	rdfs:label	"duration"@en	|name
+wd:Q2199864	rdfs:type	crm:E55.Type	|type
+_Blank Node#-1	crm:P90.has value	29.5^^xsd:decimal	|literal
+_Blank Node#-1	crm:P91.has unit	aat:300379240	|type
+aat:300379240	rdfs:label	"minutes (units for duration)"@en	|name
+aat:300379240	rdfs:type	crm:E55.Type	|type
+			
+ngi:NG1171-OS8-GC	crm:P106.is composed of	ngi:NG1171-OS8-GC-P01	|object
+ngi:NG1171-OS8-GC-P01	rdfs:type	crm:E73.Information Object	|type
+ngi:NG1171-OS8-GC-P01	crm:P43.has dimension	_Blank Node#-2	|dims_bn
+			
+_Blank Node#-2	rdfs:type	crm:E54.Dimension	|type
+_Blank Node#-2	crm:P2.has type	wd:Q2675808	|type
+wd:Q2675808	rdfs:label	"retention time"@en	|name
+wd:Q2675808	rdfs:type	crm:E55.Type	|type
+_Blank Node#-2	crm:P90.has value	11.1^^xsd:decimal	|literal
+_Blank Node#-2	crm:P91.has unit	aat:300379240	|type
+			
+ngi:NG1171-OS8-GC	crm:P138.has representation	ngi:NG1171-OS8-GC-IM01	|digital2
+ngi:NG1171-OS8-GC-IM01	rdfs:type	crm:E36.Visual Item	|type
+ngi:NG1171-OS8-GC-IM01	rdfs:comment	"Generally, some form of graphical presentation as a standalone graph or part of a digital system"@en	|note
+			
+ngi:NG1171-OS8-GC-P01	crm:P138.is composed of	ngi:NG1171-OS8-GC-C01	|object
+			
+ngi:NG1171-OS8-GC-C01	rdfs:type	crm:E73.Information Object	|type
+ngi:NG1171-OS8-GC-C01	crm:P2.has type	ngo:00A-00E1-0000	|type
+ngo:00A-00E1-0000	rdfs:label	"Mass spectral data"@en	|name
+			
+ngi:NG1171-OS8-GC-C01	crm:P67.refers to	_Blank Node#-3	|object
+_Blank Node#-3	rdfs:type	crm:E57.Material	|type
+_Blank Node#-3	crm:P2.has type	wd:Q11173	|type
+wd:Q11173	rdfs:label	"chemical compound"@en	|name
+_Blank Node#-3	crm:P45.consists of	wd:Q16676086	|type
+wd:Q16676086	rdfs:label	"methyl palmitate"@en	|name
+			
+ngi:NG1171-OS8-GC	crm:P106.is composed of	ngi:NG1171-OS8-GC-DP0001	|object
+ngi:NG1171-OS8-GC-DP0001	rdfs:type	crm:E73.Information Object	|type
+ngi:NG1171-OS8-GC-DP0001	crm:P2.has type	wd:Q5227327	|type
+wd:Q5227327	rdfs:label	"data point"@en	|name
+			
+ngi:NG1171-OS8-GC-DP0001	crm:P43.has dimension	_Blank Node#-4	|dims_bn
+_Blank Node#-4	rdfs:type	crm:E54.Dimension	|type
+_Blank Node#-4	crm:P2.has type	wd:Q2675808	|type
+wd:Q2675808	rdfs:label	"retention time"@en	|name
+_Blank Node#-4	crm:P2.has type	ngo:00A-00DW-0000	|type
+ngo:00A-00DW-0000	rdfs:label	"X Dimension"@en	|name
+_Blank Node#-4	crm:P90.has value	11.1 # xsd:decimal	|literal
+_Blank Node#-4	crm:P91.has unit	aat:300379240	|type
+aat:300379240	rdfs:label	"minutes (units for duration)"@en	|name
+			
+ngi:NG1171-OS8-GC-DP0001	crm:P43.has dimension	_Blank Node#-5	|dims_bn
+_Blank Node#-5	rdfs:type	crm:E54.Dimension	|type
+_Blank Node#-5	crm:P2.has type	ngo:00A-00E3-0000	|type
+ngo:00A-00E3-0000	rdfs:label	"Normalised ion count"@en	|name
+_Blank Node#-5	crm:P2.has type	ngo:00A-00DY-0000	|type
+ngo:00A-00DY-0000	rdfs:label	"Y Dimension"@en	|name
+_Blank Node#-5	crm:P90.has value	100 # xsd:decimal	|literal
+_Blank Node#-5	crm:P91.has unit	aat:300417377	|type
+aat:300417377	rdfs:label	"percentage"@en	|name

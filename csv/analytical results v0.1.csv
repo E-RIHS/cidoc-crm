@@ -1,0 +1,89 @@
+//flowchart LR fix
+
+_Blank Node#-1	crm:P14.carried out by	ngo:00D-002-0000	event_bn-fs24|actor
+_Blank Node#-1	rdfs:type	crm:E16.Measurement	|type
+ngo:00D-002-0000	rdfs:type	crm:E21.Person	|type
+ngo:00D-002-0000	rdfs:label	"Example NG Staff Member"@en	|name
+ngo:00D-002-0000	crm:P2.has type	aat:300025820	|type
+aat:300025820	rdfs:label	"conservation scientists"@en	|name
+
+_Blank Node#-1	owl:sameAs	_Blank Node#-3	|event_bn
+_Blank Node#-3	rdfs:type	crm:E6.Destruction	|type
+_Blank Node#-3	crm:P13.destroyed	ngi:NG1171-OS8	|object
+
+_Blank Node#-1	crm:P39.measured	ngi:NG1171-OS8
+ngi:NG1171-OS8	rdfs:type	crm:E22.Man-Made Object	|type
+
+_Blank Node#-1	crm:P40.observed dimension	_Blank Node#-2	|dims_bn
+_Blank Node#-2	rdfs:type	crm:E54.Dimension	|type
+_Blank Node#-2	owl:sameAs	ngi:NG1171-OS8-MS	|document
+ngi:NG1171-OS8-MS	rdfs:type	crm:E73.Information Object	|type
+
+ngi:NG1171-OS8-MS	crm:P43.has dimension	_Blank Node#-4	|dims_bn
+_Blank Node#-4	rdfs:type	crm:E54.Dimension	|type
+ngi:NG1171-OS8-MS	crm:P43.has dimension	_Blank Node#-5	|dims_bn
+_Blank Node#-5	rdfs:type	crm:E54.Dimension	|type
+ngi:NG1171-OS8-MS	crm:P43.has dimension	_Blank Node#-6	|dims_bn
+_Blank Node#-6	rdfs:type	crm:E54.Dimension	|type
+
+_Blank Node#-1	crm:P32.used general technique	aat:300223948	|type
+aat:300223948	rdfs:label	"gas chromatography"@en	|name
+aat:300223948	rdfs:type	crm:E55.Type	|type
+
+_Blank Node#-1	crm:P33.used specific technique	ngi:M0001	|document
+ngi:M0001	rdfs:label	"NG GC-MS Method 2009"@en	|name
+ngi:M0001	rdfs:type	crm:E29.Design or Procedure	|type
+
+_Blank Node#-1	crm:P2.has type	aat:300081865	|type
+aat:300081865	rdfs:label	chemical analysis@en	|name
+aat:300081865	rdfs:type	crm:E55.Type	|type
+
+_Blank Node#-1	rdfs:comment	“GC-MS analysis of OS8 a grey/white paint sample from the parapet crm:P70.is documented behind the Virgin’s throne”@en	|note
+
+_Blank Node#-1	crm:P70.is documented in	ngi:R000001	|document
+ngi:R000001	rdfs:type	crm:E31.Document	|type
+ngi:R000001	rdfs:label	"Organic Report for NG1171"@en	|name
+
+_Blank Node#-4	crm:P2.has type	ngo:00A-00E5-0000	|type
+ngo:00A-00E5-0000	rdfs:label	"palmitate to stearate ratio"@en	|name
+_Blank Node#-4	crm:P90.has value	2.9^^xsd:decimal	|literal
+
+_Blank Node#-5	crm:P2.has type	ngo:00A-00E6-0000	|type
+ngo:00A-00E6-0000	rdfs:label	"azelate to palmitate ratio"@en	|name
+_Blank Node#-5	crm:P90.has value	2.2^^xsd:decimal	|literal
+
+_Blank Node#-6	crm:P2.has type	ngo:00A-00E7-0000	|type
+ngo:00A-00E7-0000	rdfs:label	"azelate to suberate ratio"@en	|name
+_Blank Node#-6	crm:P90.has value	2.7^^xsd:decimal	|literal
+
+ngi:NG1171-OS8	crm:P46.is composed of	_Blank Node#-8	|object
+_Blank Node#-8	rdfs:type	crm:E57.Material	|type
+_Blank Node#-8	crm:P2.has type	aat:300163343	|type
+aat:300163343	rdfs:label	"media (artists' materials)"@en	|name
+aat:300163343	rdfs:type	crm:E57.Material	|type
+_Blank Node#-8	crm:P45.consists of	aat:300014310	|type
+aat:300014310	rdfs:label	"walnut oil"@en	material|name
+aat:300014310	rdfs:type	crm:E57.Material	|type
+
+_Blank Node#-7	rdfs:type	crm:E13.Attribute Assignment	event|type
+_Blank Node#-7	crm:P140.assigned attribute to	ngi:NG1171-OS8-MS
+_Blank Node#-7	crm:P141.assigned	_Blank Node#-8
+_Blank Node#-7	crm:P16.used specific object	ngi:NG1171-OS8-MS
+
+_Blank Node#-9	rdfs:type	crm:E13.Attribute Assignment	event|type
+_Blank Node#-9	crm:P141.assigned	_Blank Node#-8
+_Blank Node#-9	crm:P16.used specific object	ngi:NG1171-OS8-MS
+_Blank Node#-9	crm:P140.assigned attribute to	ngi:NG1171-OS8-MS
+_Blank Node#-9	crm:P141.assigned	_Blank Node#-4
+
+_Blank Node#-10	rdfs:type	crm:E13.Attribute Assignment	event|type
+_Blank Node#-10	crm:P141.assigned	_Blank Node#-8
+_Blank Node#-10	crm:P16.used specific object	ngi:NG1171-OS8-MS
+_Blank Node#-10	crm:P140.assigned attribute to	ngi:NG1171-OS8-MS
+_Blank Node#-10	crm:P141.assigned	_Blank Node#-5
+
+_Blank Node#-11	rdfs:type	crm:E13.Attribute Assignment	event|type
+_Blank Node#-11	crm:P141.assigned	_Blank Node#-8
+_Blank Node#-11	crm:P16.used specific object	ngi:NG1171-OS8-MS
+_Blank Node#-11	crm:P140.assigned attribute to	ngi:NG1171-OS8-MS
+_Blank Node#-11	crm:P141.assigned	_Blank Node#-6

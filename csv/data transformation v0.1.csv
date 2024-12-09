@@ -1,0 +1,30 @@
+//flowchart LR fix			
+			
+ngi:Data_Set_1.0_PID	rdfs:type	crm:E73.Information Object	digital2|type
+ngi:Data_Set_1.0_PID	crm:P43.has dimension	_Blank Node#-2	|dims_bn
+_Blank Node#-2	rdfs:type	crm:E54.Dimension	|type
+_Blank Node#-2	crm:P2.has type	wd:Q3331189	|type
+wd:Q3331189	rdfs:label	"version, edition, or translation"@en	|name
+wd:Q3331189	rdfs:type	crm:E55.Type	|type
+_Blank Node#-2	crm:P90.has value	1.0^^xsd:decimal	dims_bn|literal
+			
+ngi:Data_Set_1.0_PID	crm:P124.was transformed by	_Blank Node#-1	|event_bn
+_Blank Node#-1	rdfs:type	crm:E81.Transformation	|type
+_Blank Node#-1	crm:P123.resulted in	ngi:Data_Set_2.0_PID	|digital2
+_Blank Node#-1	crm:P33.used specific technique	ngi:M0003	|document
+ngi:M0003	rdfs:type	crm:E29.Design or Procedure	|type
+ngi:M0003	rdfs:label	"Retention indices calibration"@en	|name
+			
+_Blank Node#-1	crm:P2.has type	aat:300380461	|type
+aat:300380461	rdfs:label	"calibration"@en	|name
+aat:300380461	rdfs:type	crm:E55.Type	|type
+			
+ngi:Data_Set_2.0_PID	rdfs:type	crm:E73.Information Object	|type
+ngi:Data_Set_2.0_PID	crm:P43.has dimension	_Blank Node#-3	|dims_bn
+_Blank Node#-3	rdfs:type	crm:E54.Dimension	|type
+_Blank Node#-3	crm:P2.has type	wd:Q3331189	|type
+_Blank Node#-3	crm:P90.has value	2.0^^xsd:decimal	|literal
+			
+ngi:Data_Set_2.0_PID	crm:P124.was transformed by	_Blank Node#-4	|event_bn
+_Blank Node#-4	rdfs:type	crm:E81.Transformation	|type
+_Blank Node#-4	rdfs:comment	"A whole series of transformations can be modelled as shown, allowing for various calibration, format changes/conversions, processes etc"@en	|note

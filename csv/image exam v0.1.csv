@@ -1,0 +1,58 @@
+//flowchart LR fix			
+			
+_Blank Node#-1	rdfs:type	crm:E16.Measurement	event_bn|type
+_Blank Node#-1	crm:P14.carried out by	ngo:00D-002-0000	|actor
+_Blank Node#-1	crm:P39.measured	ng:0FJS-0001-0000-0000	|object
+_Blank Node#-1	crm:P32.used general technique	aat:300419323	|type
+aat:300419323	rdfs:label	"x-radiography"@en	|name
+aat:300419323	rdfs:type	crm:E55.Type	|type
+_Blank Node#-1	crm:P125.used object of type	wd:72367323	|type
+wd:72367323	rdfs:label	"x-ray film"@en	|name
+wd:72367323	rdfs:type	crm:E55.Type	|type
+_Blank Node#-1	crm:P70.is documented in	ngo:00D-0001-0000	|document
+ngo:00D-0001-0000	rdfs:type	crm:E31.Document	|type
+_Blank Node#-1	crm:P2.has type	aat:300379861	|type
+aat:300379861	rdfs:label	"imaging (image making process)"@en	|name
+aat:300379861	rdfs:type	crm:E55.Type	|type
+			
+ngo:00D-002-0000	rdfs:type	crm:E21.Person	|type
+ngo:00D-002-0000	rdfs:label	"Example NG Staff Member"@en	|name
+ngo:00D-002-0000	crm:P2.has type	aat:300025687	|type
+aat:300025687	rdfs:label	"photographers"@en	|name
+			
+ng:0FJS-0001-0000-0000	crm:P138.has representation	ngi:N-1171-00-000055	|digital2
+ngi:N-1171-00-000055	rdfs:type	crm:E36.Visual Item	|type
+			
+_Blank Node#-1	crm:P94.has created	ngi:N-1171-00-000053	|object
+ngi:N-1171-00-000053	rdfs:type	crm:E22.Man-Made Object	|type
+ngi:N-1171-00-000053	crm:P65.shows visual item	ngi:N-1171-00-000055	|digital2
+			
+ngi:N-1171-00-000053	P.65.shows visual item	ngi:N-1171-00-000055	
+ngi:N-1171-00-000053	crm:P70.is documented in	ngo:00D-0001-0000	
+ngi:N-1171-00-000053	rdfs:comment	"Free Text"@en	|note
+ngi:N-1171-00-000053	crm:P2.has type	wd:72367323	|type
+			
+ngi:N-1171-00-000053	crm:P43.has dimension	_Blank Node#-3	|dims_bn
+ngi:N-1171-00-000053	crm:P43.has dimension	_Blank Node#-4	|dims_bn
+			
+_Blank Node#-3	rdfs:type	crm:E54.Dimension	|type
+_Blank Node#-3	crm:P2.has type	aat:300055647	|type
+aat:300055647	rdfs:label	"width"@en	|name
+_Blank Node#-3	crm:P90.has value	15^^xsd:decimal	|literal
+_Blank Node#-3	crm:P91.has unit	aat:300379100	|type
+aat:300379100	rdfs:label	"inches"@en	|name
+aat:300379100	rdfs:type	crm:E55.Type	|type
+			
+_Blank Node#-4	rdfs:type	crm:E54.Dimension	|type
+_Blank Node#-4	crm:P2.has type	aat:300055644	|type
+aat:300055644	rdfs:label	"height"@en	|name
+_Blank Node#-4	crm:P90.has value	12^^xsd:decimal	|literal
+_Blank Node#-4	crm:P91.has unit	aat:300379100	|type
+			
+ngi:N-1171-00-000053	crm:P131.is identified by	_Blank Node#-5	|name
+			
+_Blank Node#-5	rdfs:type	crm:E42.Identifier	|type
+_Blank Node#-5	crm:P2.has type	aat:300404621	|type
+aat:300404621	rdfs:label	"repository numbers"@en	|name
+aat:300404621	rdfs:type	crm:E55.Type	|type
+_Blank Node#-5	rdfs:label	"N-1171-00-000053"@en	|name

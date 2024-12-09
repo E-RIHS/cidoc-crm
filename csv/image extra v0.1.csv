@@ -1,0 +1,45 @@
+//flowchart LR fix			
+			
+ng:0FJS-0001-0000-0000	rdfs:type	crm:E22.Man-Made Object	object|type
+ng:0FJS-0001-0000-0000	crm:P138.has representation	ngi:N-1171-00-000055	|digital2
+			
+ngi:N-1171-00-000053	rdfs:type	crm:E22.Man-Made Object	object|type
+ngi:N-1171-00-000055	rdfs:type	crm:E36.Visual Item	|type
+			
+ngi:N-1171-00-000053	crm:P65.shows visual item	ngi:N-1171-00-000055
+			
+ngi:N-1171-00-000055	crm:P70.is documented in	ngo:00D-0001-0000	|document
+ngo:00D-0001-0000	rdfs:type	crm:E31.Document	|type
+			
+ngi:N-1171-00-000055	crm:P2.has type	aat:300419325	|type
+aat:300419325	rdfs:label	"x-radiographs"@en	|name
+aat:300419325	rdfs:type	crm:E55.Type	|type
+ngi:N-1171-00-000055	crm:P2.has type	aat:300215302	|type
+aat:300215302	rdfs:label	"digital images"@en	|name
+aat:300215302	rdfs:type	crm:E55.Type	|type
+			
+ngi:N-1171-00-000055	rdfs:comment	Free Text@en	|note
+			
+ngi:N-1171-00-000055	crm:P43.has dimension	_Blank Node#-1	|dims_bn
+ngi:N-1171-00-000055	crm:P43.has dimension	_Blank Node#-2	|dims_bn
+			
+_Blank Node#-1	rdfs:type	crm:E54.Dimension	|type
+_Blank Node#-1	crm:P2.has type	aat:300055647	|type
+aat:300055647	rdfs:label	"width"@en	|name
+_Blank Node#-1	crm:P90.has value	19230^^xsd:decimal	|literal
+_Blank Node#-1	crm:P91.has unit	aat:300266190	|type
+aat:300266190	rdfs:label	"pixels"@en	|name
+aat:300266190	rdfs:type	crm:E55.Type	|type
+			
+_Blank Node#-2	rdfs:type	crm:E54.Dimension	|type
+_Blank Node#-2	crm:P2.has type	aat:300055644	|type
+aat:300055644	rdfs:label	"height"@en	|name
+_Blank Node#-2	crm:P90.has value	30275^^xsd:decimal	|literal
+_Blank Node#-2	crm:P91.has unit	aat:300266190	|type
+			
+ngi:N-1171-00-000055	crm:P131.is identified by	_Blank Node#-3	|name
+_Blank Node#-3	rdfs:type	crm:E42.Identifier	|type
+_Blank Node#-3	crm:P2.has type	wg:Q1144928	|type
+wg:Q1144928	rdfs:label	filename@en	|name
+wg:Q1144928	rdfs:type	crm:E55.Type	|type
+_Blank Node#-3	rdfs:label	"N-1171-00-000055.tif"@en	|name

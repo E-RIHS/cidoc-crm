@@ -1,0 +1,65 @@
+//flowchart LR fix			
+			
+_Blank Node#-0	rdfs:type	crm:E5.Event	event|type
+_Blank Node#-0	crm:P2.has type	ngo:00A-00DZ-0000	|type
+ngo:00A-00DZ-0000	rdfs:type	crm:E55.Type	|type
+ngo:00A-00DZ-0000	rdfs:label	"Annotation (event)"@en	|name
+			
+_Blank Node#-0	crm:P70.is documented in	_Blank Node#-1	|document_bn
+_Blank Node#-1	rdfs:type	crm:E31.Document	|type
+_Blank Node#-1	rdfs:comment	"This can include the reason and purpose of the Area of Interest, as text, images, video, etc."@en	|note
+			
+_Blank Node#-0	crm:P14.carried out by	ngo:00D-002-0000	|actor
+ngo:00D-002-0000	rdfs:type	crm:E21.Person	actor|type
+ngo:00D-002-0000	rdfs:label	"Example NG Staff Member"@en	actor|name
+ngo:00D-002-0000	crm:P2.has type	aat:300025820	actor|type
+aat:300025820	rdfs:label	"conservation scientists"@en	type|name
+			
+ng:0FJS-0001-0000-0000	rdfs:type	crm:E22.Man-Made Object	object|type
+ng:0FJS-0001-0000-0000	crm:P59.has section	ngi:N-1171-00-000052-S02	|place
+ngi:N-1171-00-000052-S02	rdfs:type	crm:E53.Place	|type
+_Blank Node#-0	crm:P7.took place at	ngi:N-1171-00-000052-S02	|place
+			
+ngi:N-1171-00-000052-S02	crm:P70.is documented in	_Blank Node#-2	|document_bn
+_Blank Node#-2	rdfs:type	crm:E31.Document	|type
+_Blank Node#-2	rdfs:comment	"Free Text"@en#-2	|note
+			
+ngi:N-1171-00-000052-S02	crm:P2.has type	ngo:00A-00E0-0000	|type
+ngo:00A-00E0-0000	rdfs:label	"Area of interest"@en	|name
+ngi:N-1171-00-000052-S02	crm:P1.is identified by	_Blank Node#-3	|name
+_Blank Node#-3	crm:P70.is documented in	_Blank Node#-4	|document_bn
+_Blank Node#-4	rdfs:type	crm:E31.Document	|type
+_Blank Node#-4	rdfs:comment	"Actual Textual Content"@en#-3	
+_Blank Node#-4	crm:P2.has type	aat:300026100	|type
+aat:300026100	rdfs:label	"annotations"@en	
+			
+ngi:N-1171-00-000052-S02	crm:P43.has dimension	_Blank Node#-5	|dims_bn
+ngi:N-1171-00-000052-S02	crm:P43.has dimension	_Blank Node#-6	|dims_bn
+ngi:N-1171-00-000052-S02	crm:P43.has dimension	_Blank Node#-7	|dims_bn
+ngi:N-1171-00-000052-S02	crm:P43.has dimension	_Blank Node#-8	|dims_bn
+			
+_Blank Node#-5	rdfs:type	crm:E54.Dimension	|type
+_Blank Node#-5	crm:P2.has type	ngo:00A-00DW-0000	|type
+ngo:00A-00DW-0000	rdfs:label	"X Dimension"@en	|name
+_Blank Node#-5	crm:P90.has value	170^^xsd:decimal	|literal
+_Blank Node#-5	crm:P91.has unit	aat:300266190	|type
+aat:300266190	rdfs:label	"pixels"@en	|name
+aat:300266190	rdfs:type	crm:E55.Type	|type
+			
+_Blank Node#-6	rdfs:type	crm:E54.Dimension	|type
+_Blank Node#-6	crm:P2.has type	ngo:00A-00DX-0000	|type
+ngo:00A-00DX-0000	rdfs:label	"Y Dimension"@en	|name
+_Blank Node#-6	crm:P90.has value	6239^^xsd:decimal	|literal
+_Blank Node#-6	crm:P91.has unit	aat:300266190	|type
+			
+_Blank Node#-7	rdfs:type	crm:E54.Dimension	|type
+_Blank Node#-7	crm:P2.has type	aat:300055647	|type
+aat:300055647	rdfs:label	"width"@en	type|name
+_Blank Node#-7	crm:P90.has value	200^^xsd:decimal	|literal
+_Blank Node#-7	crm:P91.has unit	aat:300266190	|type
+			
+_Blank Node#-8	rdfs:type	crm:E54.Dimension	|type
+_Blank Node#-8	crm:P2.has type	aat:300055644	|type
+aat:300055644	rdfs:label	"height"@en	|name
+_Blank Node#-8	crm:P90.has value	200^^xsd:decimal	|literal
+_Blank Node#-8	crm:P91.has unit	aat:300266190	|type
