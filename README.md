@@ -14,3 +14,7 @@ The series of draft heritage science related CIDOC CRM examples.
 [cc-by]: http://creativecommons.org/licenses/by/4.0/
 [cc-by-image]: https://i.creativecommons.org/l/by/4.0/88x31.png
 [cc-by-shield]: https://img.shields.io/badge/License-CC%20BY%204.0-lightgrey.svg
+
+These models have been extracted from: 
+
+Joseph Padfield. (2019). D.8.5 Completed example of prototype designs for integration of various types of documentation and analytical data generated for a single object (1.0). Zenodo. https://doi.org/10.5281/zenodo.5519016
